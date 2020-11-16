@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file>champs.png</file>
+        <file>R.png</file>
+        <file>Menu.png</file>
+        <file>background.jpg</file>
+        <file>ZV1.png</file>
+        <file>ZV2.png</file>
+        <file>img1.jpg</file>
+        <file>img2.png</file>
+        <file>Zone_Verte.png</file>
+        <file>Ramassage.png</file>
+        <file>Ramassage.jpg</file>
+        <file>Zone_Verte.jpg</file>
+        <file>close.png</file>
+        <file>L.jpg</file>
+        <file>List.jpg</file>
+        <file>LL.jpg</file>
+        <file>back2.jpg</file>
+        <file>Annuler2.png</file>
+        <file>Ajouter.png</file>
+        <file>Annuler.png</file>
+        <file>Enregistrer.png</file>
+        <file>Ajouter_ZV.png</file>
+        <file>Annuler_ZV.png</file>
+        <file>ch_ZV.jpg</file>
+        <file>edit_ZV.png</file>
+        <file>envi.png</file>
+        <file>Menu_Principal.png</file>
+        <file>Marche.png</file>
+        <file>Maintenance.png</file>
+        <file>Ress.png</file>
+        <file>Res.png</file>
+        <file>MP.png</file>
+        <file>ch_ZV.png</file>
+        <file>edit_R.png</file>
+        <file>ZV_Pressed.png</file>
+        <file>Ram_Pressed.png</file>
+        <file>delete.png</file>
+        <file>Save_ZV.png</file>
+        <file>Enregistrer_ZV.png</file>
+        <file>edit.png</file>
+    </qresource>
+</RCC>

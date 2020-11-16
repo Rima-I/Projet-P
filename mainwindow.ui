@@ -1,0 +1,3626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1170</width>
+    <height>652</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget_Environnement">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1171</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Jokerman</family>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
+    <widget class="QWidget" name="Sous_Menu_Env">
+     <property name="styleSheet">
+      <string notr="true">#Sous_Menu_Env {
+background-color: transparent;
+border-image: url(:background.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+     </property>
+     <widget class="QPushButton" name="pushButton_ZV">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>140</y>
+        <width>361</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_ZV {
+background-color: transparent;
+border-image: url(:Zone_Verte.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+#pushButton_ZV:pressed
+{
+   border-image: url(:ZV_Pressed.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Close_Envir">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Close_Envir {
+background-color: transparent;
+border-image: url(:close.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_MP">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_MP {
+background-color: transparent;
+border-image: url(:Menu_Principal.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Environ">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Environ {
+background-color: transparent;
+border-image: url(:envi.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Marche">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Marche {
+background-color: transparent;
+border-image: url(:Marche.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_RH">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_RH {
+background-color: transparent;
+border-image: url(:Res.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Maintenance">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Maintenance {
+background-color: transparent;
+border-image: url(:Maintenance.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_R">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>340</y>
+        <width>361</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_R {
+background-color: transparent;
+border-image: url(:Ramassage.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+#pushButton_R:pressed
+{
+   border-image: url(:Ram_Pressed.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Consulter_Ramas">
+     <property name="styleSheet">
+      <string notr="true">#Consulter_Ramas {
+background-color: transparent;
+border-image: url(:back2.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+     </property>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>540</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton {
+background-color: transparent;
+border-image: url(:Ajouter.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>541</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#label_16 {
+background-color: transparent;
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#2d80d9;&quot;&gt;Liste des ramassages&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Menu_Environ_Aff">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Menu_Environ_Aff {
+background-color: transparent;
+border-image: url(:Menu.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Close_Envir_2">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Close_Envir_2 {
+background-color: transparent;
+border-image: url(:close.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche_R">
+      <property name="geometry">
+       <rect>
+        <x>932</x>
+        <y>20</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_recherche_R{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>160</y>
+        <width>741</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_ID_Ramas_Aff">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_ID_Ramas_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Matricule_Aff">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>100</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_Matricule_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_IDChauffeur_Aff">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>160</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_IDChauffeur_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_IDEmploye1_Aff">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>220</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_IDEmploye1_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_IDEmploye2_Aff">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>280</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_IDEmploye2_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>4</red>
+             <green>7</green>
+             <blue>62</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>4</red>
+             <green>7</green>
+             <blue>62</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#09598b;&quot;&gt;Matricule du camion&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>4</red>
+             <green>7</green>
+             <blue>62</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>4</red>
+             <green>7</green>
+             <blue>62</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du chauffeur &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>211</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du 1° employé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>280</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du 2° employé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>4</red>
+             <green>7</green>
+             <blue>62</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>4</red>
+             <green>7</green>
+             <blue>62</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du ramassage&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>220</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Date &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>40</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Nombre de poubelle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>100</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Nom du cartier&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Date_Aff">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>220</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_Date_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_NomCartier_Aff">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>100</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>IBeamCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_NomCartier_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_HeureDebut_Aff">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>160</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_HeureDebut_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_NbPoubelle_Aff">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>40</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_NbPoubelle_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>160</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Heure début&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>280</y>
+         <width>119</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Durée&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Duree_Aff">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>280</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_Duree_Aff{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_MAJ_Ramas">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>320</y>
+         <width>121</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_MAJ_Ramas{
+background-color: transparent;
+border-image: none;
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Delete_Ramas">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>320</y>
+         <width>111</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>47</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_Delete_Ramas{
+background-color: transparent;
+border-image:none; 
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Icon_serachR">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>20</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Icon_serachR{
+background-color: transparent;
+border-image: none;
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_Ramas">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>111</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#tableView_Ramas {
+background-color: transparent;
+border-image: url(:LL.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::NoPen</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>groupBox_2</zorder>
+     <zorder>label_16</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>pushButton_Menu_Environ_Aff</zorder>
+     <zorder>pushButton_Close_Envir_2</zorder>
+     <zorder>lineEdit_recherche_R</zorder>
+     <zorder>pushButton_Icon_serachR</zorder>
+     <zorder>tableView_Ramas</zorder>
+    </widget>
+    <widget class="QWidget" name="MAJ_Ramas">
+     <property name="styleSheet">
+      <string notr="true">#MAJ_Ramas {
+background-color: transparent;
+border-image: url(:back2.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+     </property>
+     <widget class="QPushButton" name="pushButton_Annuler_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>490</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Annuler_MAJ {
+background-color: transparent;
+border-image: url(:Annuler.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_SaveR_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>540</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_SaveR_MAJ {
+background-color: transparent;
+border-image: url(:Enregistrer.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>140</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du chauffeur &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>140</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du 1° employé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEdit_DureeMAJ">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>410</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#timeEdit_DureeMAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_IDRamassage_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDRamassage_MAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_NomCartier_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>300</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox_NomCartier_MAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>250</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Nom du cartier&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_IDEmpl2_MAJRama">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>300</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDEmpl2_MAJRama{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEditR_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>300</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#dateEditR_MAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>360</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Heure début&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEdit_DebMAJ">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>410</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#timeEdit_DebMAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>250</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Date &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>360</y>
+        <width>119</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Durée&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>140</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Matricule du camion&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active/>
+        <inactive/>
+        <disabled/>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#ff0000;&quot;&gt;Identifiant du ramassage&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_IDEmpl1_MAJRama">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>180</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDEmpl1_MAJRama{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Matricule_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>180</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_Matricule_MAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>360</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Nombre de poubelle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_NbPoubelle_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>410</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#spinBox_NbPoubelle_MAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du 2° employé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_IDChauffeurMAJ">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>180</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDChauffeurMAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Close_Envir_3">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Close_Envir_3{
+background-color: transparent;
+border-image: url(:close.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="AJ_Ramas">
+     <property name="styleSheet">
+      <string notr="true">#AJ_Ramas {
+background-color: transparent;
+border-image: url(:back2.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_IDRamassage_AJ">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>140</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDRamassage_AJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Annuler_AJ">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>480</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Annuler_AJ {
+background-color: transparent;
+border-image: url(:Annuler.png);
+background: none;
+border: none;
+background-repeat: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_MatriculeAJ">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>140</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_MatriculeAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_IDChauffeurAJ">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>140</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDChauffeurAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Save_AJ">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>530</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Save_AJ {
+background-color: transparent;
+border-image: url(:Enregistrer.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEditR_AJ">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>280</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#dateEditR_AJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="maximumDateTime">
+       <datetime>
+        <hour>23</hour>
+        <minute>59</minute>
+        <second>59</second>
+        <year>2020</year>
+        <month>12</month>
+        <day>31</day>
+       </datetime>
+      </property>
+      <property name="minimumDateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>1970</year>
+        <month>9</month>
+        <day>14</day>
+       </datetime>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="date">
+       <date>
+        <year>2020</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEdit_DebAJ">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>280</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#timeEdit_DebAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_AdresseAJ">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>280</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox_AdresseAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEdit_DureeAJ">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>410</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#timeEdit_DureeAJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_NbPoubelle_AJ">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>410</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#spinBox_NbPoubelle_AJ{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_IDEmpl1_Rama">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>140</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDEmpl1_Rama{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_IDEmpl2_Rama">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>280</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_IDEmpl2_Rama{
+background-color: transparent;
+border-image: url(:champs.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Nom du cartier&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>100</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du chauffeur &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>370</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Nombre de poubelle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>230</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Date &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>230</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du 2° employé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>100</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Matricule du camion&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>240</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Heure début&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>370</y>
+        <width>119</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Durée&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>100</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du 1° employé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>4</red>
+            <green>7</green>
+            <blue>62</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#09598b;&quot;&gt;Identifiant du ramassage&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Close_Envir_4">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Close_Envir_4 {
+background-color: transparent;
+border-image: url(:close.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Consulter_ZV">
+     <property name="styleSheet">
+      <string notr="true">#Consulter_ZV {
+background-color: transparent;
+border-image: url(:back2.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+     </property>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>521</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#67942d;&quot;&gt;Liste des zones vertes&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Ajout_ZV">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>550</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Ajout_ZV {
+background-color: transparent;
+border-image: url(:Ajouter_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Menu_Environ_Aff_ZV">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Menu_Environ_Aff_ZV {
+background-color: transparent;
+border-image: url(:Menu.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Close_Envir_5">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Close_Envir_5 {
+background-color: transparent;
+border-image: url(:close.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche_ZV">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>10</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_recherche_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>190</y>
+        <width>451</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="pushButton_Sup_ZV">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>270</y>
+         <width>111</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_Sup_ZV {
+background-color: transparent;
+border-image: none;
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Adresse_Aff_ZV">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>160</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_Adresse_Aff_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_ID_Aff_ZV">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>40</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_ID_Aff_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Aire_Aff_ZV">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>220</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_Aire_Aff_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_47">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>100</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#67942d;&quot;&gt;Libellé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>160</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#67942d;&quot;&gt;Adresse&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_49">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>220</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#67942d;&quot;&gt;Aire&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>40</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#67942d;&quot;&gt;Identifiant&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_MAJ_ZV">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>270</y>
+         <width>121</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_MAJ_ZV{
+background-color: transparent;
+border-image: none;
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Libelle_Aff_ZV">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>100</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Javanese Text</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_Libelle_Aff_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableView" name="tableView_ZV">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>190</y>
+        <width>111</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#tableView_ZV {
+background-color: transparent;
+border-image: url(:LL.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::NoPen</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Icon_serachZV">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>12</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Icon_serachZV{
+background-color: transparent;
+border-image: none;
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>groupBox</zorder>
+     <zorder>label_22</zorder>
+     <zorder>pushButton_Ajout_ZV</zorder>
+     <zorder>pushButton_Menu_Environ_Aff_ZV</zorder>
+     <zorder>pushButton_Close_Envir_5</zorder>
+     <zorder>lineEdit_recherche_ZV</zorder>
+     <zorder>tableView_ZV</zorder>
+     <zorder>pushButton_Icon_serachZV</zorder>
+    </widget>
+    <widget class="QWidget" name="MAJ_ZV">
+     <property name="styleSheet">
+      <string notr="true">#MAJ_ZV{
+background-color: transparent;
+border-image: url(:back2.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+     </property>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>410</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#67942d;&quot;&gt;Aire&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_ID_MAJ_ZV">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_ID_MAJ_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#67942d;&quot;&gt;Libellé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>300</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#67942d;&quot;&gt;Adresse&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Libelle_MAJ_ZV">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>230</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_Libelle_MAJ_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_Adresse_MAJ_ZV">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>350</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox_Adresse_MAJ_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Aire_MAJ_ZV">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>450</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_Aire_MAJ_ZV {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Annuler_ZV_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>510</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Annuler_ZV_MAJ {
+background-color: transparent;
+border-image: url(:Annuler_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Close_Envir_6">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Close_Envir_6 {
+background-color: transparent;
+border-image: url(:close.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;Identifiant&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Save_ZV_MAJ">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>450</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Save_ZV_MAJ {
+background-color: transparent;
+border-image: url(:Save_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="AJ_ZV">
+     <property name="styleSheet">
+      <string notr="true">#AJ_ZV{
+background-color: transparent;
+border-image: url(:back2.jpg);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+     </property>
+     <widget class="QComboBox" name="comboBox_Adresse_ZV_AJ">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>340</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox_Adresse_ZV_AJ {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Aire_ZV_AJ">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>450</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_Aire_ZV_AJ {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>410</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#67942d;&quot;&gt;Aire&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Libelle_ZV_AJ">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>230</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_Libelle_ZV_AJ {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>300</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#67942d;&quot;&gt;Adresse&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>190</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#67942d;&quot;&gt;Libellé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Identifiant_ZV_AJ">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>120</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Javanese Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lineEdit_Identifiant_ZV_AJ {
+background-color: transparent;
+border-image: url(:ch_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>80</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#67942d;&quot;&gt;Identifiant&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Annuler_ZV">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>500</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Annuler_ZV {
+background-color: transparent;
+border-image: url(:Annuler_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Close_Envir_8">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Close_Envir_8 {
+background-color: transparent;
+border-image: url(:close.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Save_ZV">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>430</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Save_ZV {
+background-color: transparent;
+border-image: url(:Save_ZV.png);
+background: none;
+border: none;
+background-repeat: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1170</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
