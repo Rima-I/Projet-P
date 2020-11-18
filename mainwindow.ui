@@ -35,7 +35,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Sous_Menu_Env">
      <property name="styleSheet">
@@ -1130,7 +1130,7 @@ background-repeat: none;
      <widget class="QTableView" name="tableView_Ramas">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>110</x>
         <y>160</y>
         <width>111</width>
         <height>321</height>
@@ -1189,6 +1189,29 @@ background-repeat: none;
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton_StatR">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>80</y>
+        <width>75</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_StatR{
+background-color: transparent;
+border-image: url(:LogoStats.png);
+background: none;
+border: none;
+background-repeat: none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>groupBox_2</zorder>
      <zorder>label_16</zorder>
      <zorder>pushButton</zorder>
@@ -1197,6 +1220,7 @@ background-repeat: none;
      <zorder>lineEdit_recherche_R</zorder>
      <zorder>pushButton_Icon_serachR</zorder>
      <zorder>tableView_Ramas</zorder>
+     <zorder>pushButton_StatR</zorder>
     </widget>
     <widget class="QWidget" name="MAJ_Ramas">
      <property name="styleSheet">

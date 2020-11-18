@@ -6,6 +6,7 @@
 #include<QSqlQuery>
 #include<QSqlQueryModel>
 #include <QModelIndex>
+#include <QVector>
 Ramassage::Ramassage()
 {}
 
@@ -49,7 +50,7 @@ return model;
 
 void Ramassage::Remplissage(QString* ID,QString*Matricule,QString*Id_chauffeur,QString* id_empl1,QString* id_empl2,QString*Date,QString*Nb_poubelle,QString*Nom_Cartier,QString*Duree,QString*Heure)
 {
-
+QVector<Ramassage> tabR;
     QSqlQuery q;
 
    q.prepare("select * from RAMASSAGE where ID_RAMASSAGE='"+*ID+"'");
@@ -110,31 +111,17 @@ query.exec();
        return   query.exec();
 
 }
-bool Ramassage::Recherche(QString* ID,QString*Matricule,QString*Id_chauffeur,QString* id_empl1,QString* id_empl2,QString*Date,QString*Nb_poubelle,QString*Nom_Cartier,QString*Duree,QString*Heure)
+
+QSqlQueryModel* Ramassage::Recherche(QString ch)
 {
+
 QSqlQuery q;
 
-   q.prepare("select * from RAMASSAGE where ID_RAMASSAGE= :identifiant");
-q.bindValue(":identifiant",*ID);
+QSqlQueryModel *model= new QSqlQueryModel();
+model->setQuery("select ID_RAMASSAGE from RAMASSAGE where Matricule_Camion= '"+ch+"' or ID_RAMASSAGE='"+ch+"'");
 
-    if(q.exec())
-    {
-        while(q.next())
-        {
-            *ID= q.value(0).toString();
-            *Matricule=q.value(1).toString();
-            *Id_chauffeur=q.value(2).toString();
-            *id_empl1=q.value(3).toString();
-            *id_empl2=q.value(4).toString();
-            *Date   =q.value(5).toString();
-            *Nb_poubelle  =q.value(6).toString();
-            *Duree  =q.value(7).toString();
-            *Nom_Cartier  =q.value(8).toString();
-            *Heure=q.value(9).toString();
+model->setHeaderData(0,Qt::Horizontal,QObject::tr("IDENTIFIANT"));
 
-}
 
-}
-
-return q.exec();
+return model;
 }

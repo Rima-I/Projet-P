@@ -17,6 +17,7 @@
 #include <QMovie>
 #include <QSize>
 #include <QSortFilterProxyModel>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -50,9 +51,14 @@ ui->lineEdit_recherche_ZV->setPlaceholderText("Chercher");
 
 ui->lineEdit_Aire_ZV_AJ->setValidator(new QIntValidator(0,99999, this));
  ui->lineEdit_Aire_MAJ_ZV->setValidator(new QIntValidator(0,99999, this));
+
+
 //Affichage des tabView
   ui->tableView_ZV ->setModel(tmpZV.afficher());
   ui->tableView_Ramas->setModel(tmpR.afficher());
+
+
+
 //Delete gif
 auto movie = new QMovie(this);
 movie->setFileName("C:/Users/user/Desktop/Rima/gifs2.gif");
@@ -748,118 +754,54 @@ ui->stackedWidget_Environnement->setCurrentIndex(1);
 
 }
 
-int  MainWindow::search(QString ch)
-{
-  QStringList list;
 
-     for( int row = 0; row < ui->tableView_ZV->model()->rowCount(); ++row )
-        {
-         QModelIndex index =ui->tableView_ZV->model()->index(row, 0);
-           list.append(index.data().toString());
-
-
-
-if(list[row]==ch)
-return row ;
-        }
-return -1;
-}
-int  MainWindow::searchR(QString ch)
-{
-
-
-  QStringList list;
-
-     for( int row = 0; row < ui->tableView_Ramas->model()->rowCount(); ++row )
-        {
-         QModelIndex index =ui->tableView_Ramas->model()->index(row, 0);
-           list.append(index.data().toString());
-
-
-
-if(list[row]==ch)
-return row ;
-        }
-return -1;
-}
 
 void MainWindow::on_lineEdit_recherche_ZV_returnPressed()
 {
  Zone_Verte z;
-  QString ID,Libelle,Adresse,Aire;
-  ID= ui->lineEdit_recherche_ZV->text();
-     int verif=-1;
-      verif=search(ID);
+  QString ch;
+  ch= ui->lineEdit_recherche_ZV->text();
+      ui->lineEdit_ID_Aff_ZV->clear() ;
+       ui->lineEdit_Libelle_Aff_ZV->clear();
+       ui->lineEdit_Adresse_Aff_ZV->clear();
+      ui->lineEdit_Aire_Aff_ZV->clear();
+      if(ch!="")
+       ui->tableView_ZV->setModel(tmpZV.Recherche(ch));
+      else
+         ui->tableView_ZV->setModel(tmpZV.afficher());
 
-         bool test=z.Recherche(&ID,&Libelle,&Adresse,&Aire);
-         if(test && verif!=-1)
-         {
-
-         ui->tableView_ZV->selectRow(verif);
-             ui->lineEdit_ID_Aff_ZV->setText(ID) ;
-             ui->lineEdit_Libelle_Aff_ZV->setText(Libelle);
-             ui->lineEdit_Adresse_Aff_ZV->setText(Adresse);
-             ui->lineEdit_Aire_Aff_ZV->setText(Aire);
-
-             ui->groupBox->setTitle( ui->lineEdit_ID_Aff_ZV->text());
-
-
-         }
-         else
-  {
-             ui->lineEdit_ID_Aff_ZV->clear() ;
-             ui->lineEdit_Libelle_Aff_ZV->clear();
-             ui->lineEdit_Adresse_Aff_ZV->clear();
-              ui->lineEdit_Aire_Aff_ZV->clear();
-
-             ui->groupBox->setTitle("");
-             QMessageBox::critical(nullptr,QObject::tr("Recherche")
-                                      ,QObject::tr("Zone verte inexistante "));
-         }
-         ui->lineEdit_recherche_ZV->clear();
 }
 
 void MainWindow::on_lineEdit_recherche_R_returnPressed()
-{Ramassage R;
-    QString ID ,Matricule,Id_chauffeur, id_empl1, id_empl2,Date, Nb_poubelle,Nom_cartier,Duree, Heure;
-  ID= ui->lineEdit_recherche_R->text();
-  int verif=-1;
-   verif=searchR(ID);
+{
+    QString ch;
+  ch= ui->lineEdit_recherche_R->text();
+
+if(ch!="")
+ ui->tableView_Ramas->setModel(tmpR.Recherche(ch));
+else
+   ui->tableView_Ramas->setModel(tmpR.afficher());
+ui->lineEdit_ID_Ramas_Aff->clear();
+ui->lineEdit_Matricule_Aff->clear();
+ui->lineEdit_IDChauffeur_Aff->clear();
+ui->lineEdit_IDEmploye1_Aff->clear();
+ui->lineEdit_IDEmploye2_Aff->clear();
+ui->lineEdit_Date_Aff->clear();
+ui->lineEdit_NbPoubelle_Aff->clear();
+ui->lineEdit_Duree_Aff->clear();
+ui->lineEdit_NomCartier_Aff->clear();
+ui->lineEdit_HeureDebut_Aff->clear();
+
+ui->groupBox_2->setTitle("");
 
 
-bool test=R.Recherche(&ID,&Matricule,&Id_chauffeur, &id_empl1,&id_empl2,&Date, &Nb_poubelle,&Nom_cartier,&Duree, &Heure);
-      if(test && verif!=-1)
-      {qDebug()<<"verif R: "<<verif;
-             /*!!!!!!!!!!!!!!!*/  ui->tableView_Ramas->selectRow(verif);
-               ui->lineEdit_ID_Ramas_Aff->setText(ID);
-               ui->lineEdit_Matricule_Aff->setText(Matricule);
-               ui->lineEdit_IDChauffeur_Aff->setText(Id_chauffeur);
-               ui->lineEdit_IDEmploye1_Aff->setText(id_empl1);
-               ui->lineEdit_IDEmploye2_Aff->setText(id_empl2);
-               ui->lineEdit_Date_Aff->setText(Date);
-               ui->lineEdit_NbPoubelle_Aff->setText(Nb_poubelle);
-               ui->lineEdit_Duree_Aff->setText(Duree);
-               ui->lineEdit_NomCartier_Aff->setText(Nom_cartier);
-               ui->lineEdit_HeureDebut_Aff->setText(Heure);
-               ui->groupBox_2->setTitle(  ui->lineEdit_recherche_R->text());
-      }
-      else
-{         ui->tableView_Ramas->selectRow(verif);
-           ui->lineEdit_ID_Ramas_Aff->clear();
-          ui->lineEdit_Matricule_Aff->clear();
-          ui->lineEdit_IDChauffeur_Aff->clear();
-          ui->lineEdit_IDEmploye1_Aff->clear();
-          ui->lineEdit_IDEmploye2_Aff->clear();
-          ui->lineEdit_Date_Aff->clear();
-          ui->lineEdit_NbPoubelle_Aff->clear();
-          ui->lineEdit_Duree_Aff->clear();
-          ui->lineEdit_NomCartier_Aff->clear();
-          ui->lineEdit_HeureDebut_Aff->clear();
 
-          ui->groupBox_2->setTitle("");
-          QMessageBox::critical(nullptr,QObject::tr("Recherche")
-                                   ,QObject::tr("Ramassage inexistante "));
-      }
 
-       ui->lineEdit_recherche_R->clear();
+
+
+}
+
+void MainWindow::on_pushButton_Mail_clicked()
+{
+
 }

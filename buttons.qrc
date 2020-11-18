@@ -40,5 +40,6 @@
         <file>Save_ZV.png</file>
         <file>Enregistrer_ZV.png</file>
         <file>edit.png</file>
+        <file>LogoStats.png</file>
     </qresource>
 </RCC>

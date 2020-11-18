@@ -40,7 +40,7 @@ public:
   void Remplissage(QString*,QString*,QString*,QString*);
   bool Supprimer(QString ID);
   bool Modifier(QString,QString,QString,QString );
-  bool  Recherche(QString*ID,QString*Libelle,QString*Adresse,QString*Aire);
+  QSqlQueryModel*  Recherche(QString);
 };
 
 #endif // ZONE_VERTE_H

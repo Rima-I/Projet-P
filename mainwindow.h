@@ -105,11 +105,12 @@ private slots:
 
 
 
-int searchR(QString ch);
-int search(QString ch);
+
 void on_lineEdit_recherche_ZV_returnPressed();
 
 void on_lineEdit_recherche_R_returnPressed();
+
+void on_pushButton_Mail_clicked();
 
 private:
     Ui::MainWindow *ui;

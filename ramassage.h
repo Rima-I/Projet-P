@@ -68,7 +68,7 @@ QSqlQueryModel* afficher();
 void Remplissage(QString*,QString*,QString*,QString*,QString*,QString*,QString*,QString*,QString*,QString*);
 bool Supprimer(QString ID);
 bool Modifier(QString,QString,QString,QString,QString,QString,QString,QString,QString,QString);
-bool Recherche(QString*,QString*,QString*,QString*,QString*,QString*,QString*,QString*,QString*,QString*);
+QSqlQueryModel* Recherche(QString);
 };
 
 #endif // RAMASSAGE_H
