@@ -61,7 +61,7 @@ ui->lineEdit_Aire_ZV_AJ->setValidator(new QIntValidator(0,99999, this));
 
 //Delete gif
 auto movie = new QMovie(this);
-movie->setFileName("C:/Users/user/Desktop/Rima/gifs2.gif");
+movie->setFileName("C:/Users/user/Desktop/Rima/Environnement/gifs2.gif");
 QSize size(100,100);
   connect(movie, &QMovie::frameChanged, [=]{
     ui->pushButton_Delete_Ramas->setIcon(movie->currentPixmap());
